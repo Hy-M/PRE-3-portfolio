@@ -1,0 +1,117 @@
+/* Variables */
+:root {
+    --main-font-color: rgb(124, 74, 240);
+}
+/* rgb(255, 174, 231 */
+body {
+    box-sizing: border-box;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.6px;
+}
+
+/* Header and nav bar */
+.header--title {
+    color: var(--main-font-color);
+    padding: 0 2rem;
+}
+
+.nav {
+    width: 70%;
+    margin: 2rem auto 3rem auto;
+}
+
+.nav--items {
+    display: flex;  
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav--items a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.nav--items a:hover {
+    color: var(--main-font-color);
+    border-bottom: 1px solid var(--main-font-color);
+    transition: all 0.25s;
+}
+
+/* Main body of page */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 1rem;
+    margin: 0 2rem;
+}
+
+/* About me section */
+.about--description {
+  line-height: 1.7rem;
+}
+
+.about--description a {
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+/* Aside section with projects view */
+.aside {
+    justify-self: end;
+}
+
+.aside--images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside--image {
+    height: 250px;
+    width: 250px;
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+.aside--image-overlay {
+    position: absolute;
+    opacity: 0;
+    height: 250px;
+    width: 250px;
+    margin: 0.5rem 0;
+    background-color: var(--main-font-color);
+    cursor: pointer;
+}
+
+.aside--images:hover .aside--image-overlay {
+    opacity: 0.4;
+}
+
+.aside--description {
+    font-size: 17px;
+    text-align: center;
+}
+
+.aside--description a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.aside--description a:hover {
+    color: var(--main-font-color);
+    transition: color 0.25s;
+}
+
+/* Footer section */
+.footer {
+    width: 95%;
+    margin: 0 auto 2rem auto;
+    border-top: 1px solid rgb(175, 175, 175);
+}
+.footer--description {
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
