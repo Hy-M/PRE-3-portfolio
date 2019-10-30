@@ -10,9 +10,10 @@ body {
 }
 
 /* Header and nav bar */
-.header--title {
+.header--title a {
     color: var(--main-font-color);
     padding: 0 2rem;
+    text-decoration: none;
 }
 
 .nav {
@@ -36,7 +37,12 @@ body {
 .nav--items a:hover {
     color: var(--main-font-color);
     border-bottom: 1px solid var(--main-font-color);
-    transition: all 0.25s;
+    transition: all 0.3s ease;
+}
+
+.nav--items i:hover {
+    color: var(--main-font-color);
+    transition: all 0.3s ease;
 }
 
 /* Main body of page */
@@ -48,6 +54,10 @@ main {
 }
 
 /* About me section */
+.about--title {
+    line-height: 2.2rem;
+}
+
 .about--description {
   line-height: 1.7rem;
 }
@@ -57,22 +67,73 @@ main {
     color: var(--main-font-color);
 }
 
-/* Aside section with projects view */
+.about--description a:hover {
+    color: rgb(175, 175, 175);
+    transition: color 0.25s ease;
+}
+
+/* Projects section */
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 350px;
+}
+
+.projects--grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects--grid-image {
+    height: 250px;
+    width: 250px;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    border-radius: 7px;
+}
+
+.projects--grid-link {
+    font-size: 17px;
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+    margin: 0.2rem 0;
+}
+
+.projects--grid-link:hover {
+    color: rgb(124, 74, 240);
+    transition: color 0.3s ease;
+}
+
+/* Aside section with projects preview */
 .aside {
     justify-self: end;
+    text-align: center;
 }
 
 .aside--images {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .aside--image {
     height: 250px;
     width: 250px;
     margin: 0.5rem 0;
+    border-radius: 7px;
     position: relative;
+}
+
+.aside--image-icon {
+    position: absolute;
+    font-size: 1.2rem;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 999;
 }
 
 .aside--image-overlay {
@@ -89,25 +150,25 @@ main {
     opacity: 0.4;
 }
 
-.aside--description {
-    font-size: 17px;
-    text-align: center;
+.aside--images:hover .fa-search {
+    opacity: 1;
 }
 
-.aside--description a {
+.aside--description-link {
+    font-size: 17px;
     color: inherit;
     text-decoration: none;
 }
 
-.aside--description a:hover {
+.aside--description-link:hover {
     color: var(--main-font-color);
-    transition: color 0.25s;
+    transition: color 0.25s ease;
 }
 
 /* Footer section */
 .footer {
     width: 95%;
-    margin: 0 auto 2rem auto;
+    margin: 2rem auto;
     border-top: 1px solid rgb(175, 175, 175);
 }
 .footer--description {

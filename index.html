@@ -5,49 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio | Humayraa</title>
+    <title>Humayraa</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 
 <body>
     <header>
-        <h1 class="header--title">Humayraa</h1>
+        <h1 class="header--title">
+            <a href="./index.html">Humayraa</a>
+        </h1>
         <nav class="nav">
             <ul class="nav--items">
-                <li><a href="./index.html">About me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">github</a></li>
+                <!-- <li><a href="./index.html">About me</a></li> -->
+                <li><a href="./projects.html">Projects</a></li>
                 <li><a href="#">Get in touch</a></li>
+                <li><a href="#"><i class="devicon-github-plain colored"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="about">
-            <h2 class="about--title">A software developer in the making</h2>
-            <p class="about--description">I am currently studying software development at Northcoders, the leading coding bootcamp in the North.</p>
-            <p class="about--description">Prior to that, I have experience working as an e-commerce administrator, as well as both paid and voluntary work in a variety of settings.
+            <h2 class="about--title">A full-stack developer in the making</h2>
+            <p class="about--description">I am currently studying software development at Northcoders, the leading
+                coding bootcamp in the North.</p>
+            <p class="about--description">Prior to that, I have experience working as an e-commerce administrator, as
+                well as both paid and voluntary work in a variety of settings.
             </p>
-            <p class="about--description">Technology is ever-evolving, and so am I. My aim is to continually learn and grow as I develop clean applications that make your life easier.</p>
-            <p class="about--description">That's enough talking from me. You can check out my work<a href="#"> here</a>, and see what i'm all about.</p>
+            <p class="about--description">Technology is ever-evolving, and so am I. My aim is to continually learn and
+                grow as I develop clean applications that make your life easier.</p>
+            <p class="about--description">That's enough talking from me. You can check out my work<a href="#"> here</a>
+                to see what i'm all about.</p>
             <p class="about--description">Got a question?<a href="#"> Let's chat.</a></p>
         </section>
+
         <aside class="aside">
             <h4 class="aside--title">Take a look at my work</h4>
             <div class="aside--images">
-                <img class="aside--image" src="./images/website-laptop.jpeg" alt="website-displayed-on-a-laptop">
-                <div class="aside--image-overlay"></div> 
+                <img class="aside--image" src="./images/website-laptop.jpeg" alt="A project preview on a laptop screen">
+                <a href="./projects.html"><i class="aside--image-icon fas fa-search"></i></a>
+                <div class="aside--image-overlay"></div>
             </div>
             <div class="aside--images">
-                <img class="aside--image" src="./images/website-laptop-2.jpeg" alt="website-displayed-on-a-laptop">
-                <div class="aside--image-overlay"></div> 
+                <img class="aside--image" src="./images/website-laptop-2.jpeg"
+                    alt="A project preview on a laptop screen">
+                <a href="./projects.html"><i class="aside--image-icon fas fa-search"></i></a>
+                <div class="aside--image-overlay"></div>
             </div>
-            <p class="aside--description"><a href="#">View full portfolio</a></p>
+            <a class="aside--description-link" href="#">View full portfolio</a>
         </aside>
     </main>
+
     <footer class="footer">
         <p class="footer--description">Developed with care by Humayraa</p>
     </footer>
+
+    <script src="https://kit.fontawesome.com/51ea1f35e7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
