@@ -2,6 +2,7 @@
 :root {
     --main-font-color: rgb(124, 74, 240);
 }
+
 /* rgb(255, 174, 231 */
 body {
     box-sizing: border-box;
@@ -26,6 +27,7 @@ body {
     color: rgb(175, 175, 175);
     cursor: pointer;
     outline: none;
+    z-index: 999;
 }
 
 #btnScrollToTop:hover {
@@ -39,7 +41,7 @@ body {
 }
 
 .nav--items {
-    display: flex;  
+    display: flex;
     justify-content: space-evenly;
     list-style-type: none;
     padding: 0;
@@ -76,7 +78,7 @@ main {
 }
 
 .about--description {
-  line-height: 1.7rem;
+    line-height: 1.7rem;
 }
 
 .about--description a {
@@ -188,8 +190,59 @@ main {
     margin: 2rem auto;
     border-top: 1px solid rgb(175, 175, 175);
 }
+
 .footer--description {
     margin-top: 1rem;
     font-size: 14px;
 }
 
+/* Media queries - index.html */
+
+@media (min-width: 320px) {
+    .header--title a {
+        font-size: 1.8rem;
+        padding: 0 1rem;
+    }
+
+    #btnScrollToTop {
+        bottom: 15px;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    /* Main body of page */
+    main {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    /* About me section */
+    .about {
+        margin-top: -1rem;
+    }
+
+    .about--title {
+        font-size: 1.2rem;
+        width: 85%;
+    }
+
+    /* aside section with projects preview */
+    .aside {
+        justify-self: center;
+    }
+
+    /* footer section */
+    .footer {
+        margin: 2rem auto;
+        text-align: center;
+    }
+
+    /* projects section - projects.html */
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
