@@ -203,6 +203,7 @@ main {
 }
 
 /* Contact form section */
+
 #fs-frm {
     margin-left: -10rem;
     margin-top: 2rem;
@@ -401,6 +402,7 @@ main {
 
      /* Contact form section */
      #fs-frm {
-        margin: 1.5rem 0 0 0;
+        margin-left: -4rem;
+        margin-right: 1rem;
     }
 }
