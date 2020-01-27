@@ -17,6 +17,7 @@ body {
     padding: 0 2rem;
     text-decoration: none;
     outline: none;
+    font-size: 2.4rem;
 }
 
 .header--title a:hover {
@@ -292,6 +293,44 @@ main {
 
 /* Media queries - index.html */
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header--title a {
+        padding: 0 1rem;
+        font-size: 2rem;
+    }
+
+    main {
+        column-gap: 1.5rem;
+        width: 90%;
+    }
+
+    /* about section */
+    .about--title {
+        font-size: 1.5rem;
+    }
+
+    .about--description {
+        font-size: 1rem;
+    }
+    /* projects section */
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* aside section with projects preview*/
+    .aside--title {
+        padding-top: 0.5rem;
+    }
+
+    /* footer section */
+    .footer--description {
+        margin: 1rem;
+    }
+
+     /* Contact form section */
+
+}
+
 @media (min-width: 320px) and (max-width: 425px) {
     .header--title a {
         font-size: 1.8rem;
@@ -355,39 +394,4 @@ main {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .header--title a {
-        padding: 0 1rem;
-    }
 
-    main {
-        column-gap: 1.5rem;
-        width: 90%;
-    }
-
-    /* about section */
-    .about--title {
-        font-size: 1.5rem;
-    }
-
-    .about--description {
-        font-size: 1rem;
-    }
-    /* projects section */
-    .projects {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /* aside section with projects preview*/
-    .aside--title {
-        padding-top: 0.5rem;
-    }
-
-    /* footer section */
-    .footer--description {
-        margin: 1rem;
-    }
-
-     /* Contact form section */
-
-}
