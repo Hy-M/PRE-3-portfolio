@@ -1,6 +1,7 @@
 /* Variables */
 :root {
     --main-font-color: rgb(124, 74, 240);
+    --main-hover-color: rgb(180, 148, 255);
 }
 
 /* rgb(255, 174, 231 */
@@ -16,6 +17,11 @@ body {
     padding: 0 2rem;
     text-decoration: none;
     outline: none;
+}
+
+.header--title a:hover {
+    color:  var(--main-hover-color);
+    transition: color 0.3s ease;
 }
 
 #btnScrollToTop {
@@ -92,7 +98,7 @@ main {
 }
 
 .about--description a:hover {
-    color: rgb(175, 175, 175);
+    color: var(--main-hover-color);
     transition: color 0.25s ease;
 }
 
@@ -202,10 +208,16 @@ main {
     font-size: 15px;
 }
 
+/* Single project section */
+.project--img {
+    height: 400px;
+    border-radius: 5px;
+}
 /* Contact form section */
-
+.contact-section {
+    width: 80%;
+}
 #fs-frm {
-    margin-left: -10rem;
     margin-top: 2rem;
 }
 #fs-frm input,
@@ -334,10 +346,12 @@ main {
     }
 
     /* Contact form section */
-    #fs-frm {
+    .contact-section {
         width: 90%;
+    }
+
+    #fs-frm {
         margin-top: 1rem;
-        margin-left: 0;
     }
 }
 
@@ -375,8 +389,5 @@ main {
     }
 
      /* Contact form section */
-     #fs-frm {
-        margin-left: -4rem;
-        margin-right: 1rem;
-    }
+
 }
