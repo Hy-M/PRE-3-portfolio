@@ -59,7 +59,7 @@ body {
     color: inherit;
     text-decoration: none;
     border-bottom: 1px solid black;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .nav--items a:hover {
@@ -165,7 +165,7 @@ main {
 
 .aside--image-icon {
     position: absolute;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #fff;
     top: 50%;
     left: 50%;
@@ -182,7 +182,6 @@ main {
     margin: 0.5rem 0;
     border-radius: 7px;
     background-color: var(--main-font-color);
-    cursor: pointer;
 }
 
 .aside--images:hover .aside--image-overlay {
