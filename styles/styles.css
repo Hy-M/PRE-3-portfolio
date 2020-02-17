@@ -84,7 +84,7 @@ main {
 
 /* About me section */
 .about--title {
-    line-height: 2.2rem;
+    line-height: 2.8rem;
     font-size: 2rem;
 }
 
@@ -129,8 +129,10 @@ main {
 }
 
 .projects--grid-image {
+    /* height: 250px;
+    width: 250px; */
     height: 250px;
-    width: 250px;
+    width: 350px;
     margin: 0 0.5rem 0.5rem 0.5rem;
     border-radius: 7px;
     position: relative;
@@ -152,7 +154,7 @@ main {
     position: absolute;
     opacity: 0;
     height: 250px;
-    width: 250px;
+    width: 350px;
     /* margin: 0.5rem 0; */
     border-radius: 7px;
     background-color: var(--main-font-color);
@@ -199,7 +201,7 @@ main {
 
 .aside--image {
     height: 250px;
-    width: 250px;
+    width: 350px;
     margin: 0.5rem 0;
     border-radius: 7px;
     position: relative;
@@ -220,7 +222,7 @@ main {
     position: absolute;
     opacity: 0;
     height: 250px;
-    width: 250px;
+    width: 350px;
     margin: 0.5rem 0;
     border-radius: 7px;
     background-color: var(--main-font-color);
@@ -357,6 +359,7 @@ main {
 
     /* about section */
     .about--title {
+        line-height: 2.2rem;
         font-size: 1.5rem;
     }
 
@@ -369,12 +372,32 @@ main {
         grid-template-columns: 1fr 1fr;
     }
 
+    .projects--grid-image {
+        height: 180px;
+        width: 250px;
+    }
+
+    .projects--grid-image-overlay {
+        height: 180px;
+        width: 250px;
+    }
+
     /* Single project section */
     
 
     /* aside section with projects preview*/
     .aside--title {
         padding-top: 0.5rem;
+    }
+
+    .aside--image {
+        height: 180px;
+        width: 250px;
+    }
+
+    .aside--image-overlay {
+        height: 180px;
+        width: 250px;
     }
 
     /* footer section */
@@ -420,6 +443,7 @@ main {
 
     .about--title {
         font-size: 1.3rem;
+        line-height: 2rem;
     }
 
     .about--description {
@@ -429,6 +453,16 @@ main {
     /* aside section with projects preview */
     .aside {
         justify-self: center;
+    }
+
+    .aside--image {
+        height: 210px;
+        width: 290px;
+    }
+
+    .aside--image-overlay {
+        height: 210px;
+        width: 290px;
     }
 
     /* footer section */
@@ -441,6 +475,16 @@ main {
     .projects,
     .project {
         grid-template-columns: 1fr;
+    }
+
+    .projects--grid-image {
+        height: 210px;
+        width: 290px;
+    }
+
+    .projects--grid-image-overlay {
+        height: 210px;
+        width: 290px;
     }
 
     /* Contact form section */
