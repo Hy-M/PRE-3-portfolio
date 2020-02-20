@@ -1,85 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Humayraa</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-</head>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1 class="header--title">
-            <a href="./index.html">Humayraa</a>
-        </h1>
-        <button id="btnScrollToTop" title="Back to top">
-            <i class="fas fa-arrow-circle-up"></i>
-        </button>
-        <nav class="nav">
-            <ul class="nav--items">
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./contact.html">Get in touch</a></li>
-                <li><a href="https://github.com/Hy-M" target="_blank"><i class="devicon-github-plain colored"></i></a></li>
-            </ul>
-        </nav>
+      <h1 class="header--title">
+        <a href="./index.html">Humayraa</a>
+      </h1>
+      <button id="btnScrollToTop" title="Back to top">
+        <i class="fas fa-arrow-circle-up"></i>
+      </button>
+      <nav class="nav">
+        <ul class="nav--items">
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Get in touch</a></li>
+          <li>
+            <a href="https://github.com/Hy-M" target="_blank"
+              ><i class="devicon-github-plain colored"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="about">
-            <h2 class="about--title">A reddit-style news app</h2>
-            <p class="about--description">A full-stack application displaying news about Northcoders. The data is accessed through a RESTful API with many endpoints, whilst the front-end is a single-page React application. Users can post a comment, delete their own comment, vote on articles and comments, and browse through filtered and sorted articles.</p>
-            <p class="about--description"><a href="https://hym-nc-news.netlify.com/">View the hosted site</a> | <a href="https://github.com/Hy-M/fe-nc-news">the front-end code</a> | <a href="https://github.com/Hy-M/be-nc-news-sprint">the back-end code</a>
-            </p>
-            <img class="project--img" src="./images/nc-news-site-collage.jpg" alt="Hosted NC News site">
-            <p class="about--description">The front-end was built using:</p>
-            <ul class="about--list">
-                    <li>React</li>
-                    <li>Reach Router</li>
-                    <li>Axios</li>
-                    <li>Mocha & Chai</li>
-            </ul>
-            <p class="about--description">My front-end code was split into components which are independant, reusable bits of code.</p>
-            <!-- <img class="project--img" src="./images/nc-news-be-collage.jpg" alt="Java code midway through the development process"> -->
-            <p class="about--description">The back-end was built using:</p>
-            <ul class="about--list">
-                <li>PostgreSQL</li>
-                <li>Knex.js & node-postgres</li>
-                <li>Express.js</li>
-                <li>PostgreSQL</li>
-                <li>Mocha, Chai & Chai Sorted</li>
-                <li>Supertest</li>
-            </ul>
-            <p class="about--description">The back-end code follows a model-view-controller architecture for seperation of the applications' concerns.</p>
-            <!-- <img class="project--img" src="./images/nc-news-be-collage.jpg" alt="Java code midway through the development process"> -->
-            <!-- <p class="about--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt et sunt, sapiente possimus impedit error esse eius beatae repudiandae dicta doloribus minima. Saepe non eum dolore magni reprehenderit quaerat unde eius doloribus voluptatum veniam quibusdam modi, nisi, numquam eaque perferendis.</p> -->
-        </section>
-        <aside class="aside">
-            <h4 class="aside--title">View more of my work</h4>
-            <div class="aside--images">
-                <img class="aside--image" src="./images/website-laptop.jpeg" alt="A project preview on a laptop screen">
-                <a href="./projects.html"><i class="aside--image-icon fas fa-search"></i></a>
-                <div class="aside--image-overlay"></div>
-            </div>
-            <div class="aside--images">
-                <img class="aside--image" src="./images/website-laptop-2.jpeg"
-                    alt="A project preview on a laptop screen">
-                <a href="./projects.html"><i class="aside--image-icon fas fa-search"></i></a>
-                <div class="aside--image-overlay"></div>
-            </div>
-            <a class="aside--description-link" href="./projects.html">View full portfolio</a>
-        </aside>
-
+      <section class="about">
+        <h2 class="about--title">NC NEWS - a Reddit inspired news app</h2>
+        <p class="about--description">
+          A full-stack, single-page, interactive application. Users can post a
+          comment, delete their own comment, vote on articles and comments, and
+          browse through filtered and sorted articles. The data is accessed
+          through a RESTful API with endpoints, whilst the front-end is a
+          single-page React application.
+        </p>
+        <p class="about--description about--description-links">
+          <a href="https://hym-nc-news.netlify.com/">View the hosted site</a> |
+          <a href="https://github.com/Hy-M/fe-nc-news">the front-end code</a> |
+          <a href="https://github.com/Hy-M/be-nc-news-sprint"
+            >the back-end code</a
+          >
+        </p>
+        <img
+          class="project--img"
+          src="./images/nc-news-site-collage.jpg"
+          alt="Hosted NC News site"
+        />
+        <p class="about--description">
+          The front-end code was split into components to make independant,
+          reusable bits of code. It was built using:
+        </p>
+        <ul class="about--list">
+          <li>React</li>
+          <li>Reach Router</li>
+          <li>Axios</li>
+          <li>Mocha & Chai</li>
+        </ul>
+        <!-- <img class="project--img" src="./images/nc-news-be-collage.jpg" alt="Java code midway through the development process"> -->
+        <p class="about--description">
+          The back-end code follows a model-view-controller architecture for
+          seperation of the applications' concerns. It was built using:
+        </p>
+        <ul class="about--list">
+          <li>PostgreSQL</li>
+          <li>Express.js</li>
+          <li>Knex.js & node-postgres</li>
+          <li>Mocha, Chai & Chai Sorted</li>
+          <li>Supertest</li>
+        </ul>
+        <!-- <img class="project--img" src="./images/nc-news-be-collage.jpg" alt="Java code midway through the development process"> -->
+        <!-- <p class="about--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt et sunt, sapiente possimus impedit error esse eius beatae repudiandae dicta doloribus minima. Saepe non eum dolore magni reprehenderit quaerat unde eius doloribus voluptatum veniam quibusdam modi, nisi, numquam eaque perferendis.</p> -->
+      </section>
+      <aside class="aside">
+        <h4 class="aside--title">View more of my work</h4>
+        <div class="aside--images">
+          <img
+            class="aside--image"
+            src="./images/nc-news-screenshot.jpg"
+            alt="A screenshot of a project"
+          />
+          <a href="./project-two.html"
+            ><i class="aside--image-icon fas fa-search"></i
+          ></a>
+          <div class="aside--image-overlay"></div>
+        </div>
+        <!-- <div class="aside--images">
+          <img
+            class="aside--image"
+            src="./images/nc-news-screenshot.jpg"
+            alt="A screenshot of a project"
+          />
+          <a href="./project-three.html"
+            ><i class="aside--image-icon fas fa-search"></i
+          ></a>
+          <div class="aside--image-overlay"></div>
+        </div> -->
+        <a class="aside--description-link" href="./projects.html"
+          >View full portfolio</a
+        >
+      </aside>
     </main>
 
     <footer class="footer">
-        <p class="footer--description">Developed with care by Humayraa</p>
+      <p class="footer--description">Developed with care by Humayraa</p>
     </footer>
     <script src="./scripts/app.js"></script>
-    <script src="https://kit.fontawesome.com/51ea1f35e7.js" crossorigin="anonymous"  Set-Cookie: SameSite=None; Secure></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/51ea1f35e7.js"
+      crossorigin="anonymous"
+      Set-Cookie:
+      SameSite="None;"
+      Secure
+    ></script>
+  </body>
 </html>
