@@ -102,13 +102,6 @@ main {
   color: var(--main-font-color);
 }
 
-.about--description-main {
-  text-align: center;
-  line-height: 1.9rem;
-  font-size: 1.2rem;
-  color: var(--main-font-color);
-}
-
 .about--description a:hover {
   color: var(--main-hover-color);
   transition: color 0.25s ease;
@@ -140,10 +133,8 @@ main {
 }
 
 .projects--grid-image {
-  /* height: 250px;
-    width: 250px; */
-  height: 250px;
-  width: 350px;
+  height: 280px;
+  width: 500px;
   margin: 0 0.5rem 0.5rem 0.5rem;
   border-radius: 7px;
   position: relative;
@@ -164,8 +155,8 @@ main {
 .projects--grid-image-overlay {
   position: absolute;
   opacity: 0;
-  height: 250px;
-  width: 350px;
+  height: 280px;
+  width: 500px;
   /* margin: 0.5rem 0; */
   border-radius: 7px;
   background-color: var(--main-font-color);
@@ -211,8 +202,8 @@ main {
 }
 
 .aside--image {
-  height: 250px;
-  width: 350px;
+  height: 280px;
+  width: 500px;
   margin: 0.5rem 0;
   border-radius: 7px;
   position: relative;
@@ -232,8 +223,8 @@ main {
 .aside--image-overlay {
   position: absolute;
   opacity: 0;
-  height: 250px;
-  width: 350px;
+  height: 280px;
+  width: 500px;
   margin: 0.5rem 0;
   border-radius: 7px;
   background-color: var(--main-font-color);
@@ -364,7 +355,7 @@ main {
   }
 
   main {
-    column-gap: 1.5rem;
+    grid-template-columns: 1fr;
     width: 90%;
   }
 
@@ -380,34 +371,39 @@ main {
 
   /* projects section && single project*/
   .projects {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .projects--grid-image {
-    height: 180px;
-    width: 250px;
+    height: 220px;
+    width: 400px;
   }
 
   .projects--grid-image-overlay {
-    height: 180px;
-    width: 250px;
+    height: 220px;
+    width: 400px;
   }
 
   /* Single project section */
 
   /* aside section with projects preview*/
+  .aside {
+    justify-self: center;
+  }
+
   .aside--title {
     padding-top: 0.5rem;
   }
 
   .aside--image {
-    height: 180px;
-    width: 250px;
+    height: 220px;
+    width: 400px;
+    margin: 1rem 0;
   }
 
   .aside--image-overlay {
-    height: 180px;
-    width: 250px;
+    height: 220px;
+    width: 400px;
   }
 
   /* footer section */
@@ -466,12 +462,12 @@ main {
   }
 
   .aside--image {
-    height: 210px;
+    height: 180px;
     width: 290px;
   }
 
   .aside--image-overlay {
-    height: 210px;
+    height: 180px;
     width: 290px;
   }
 
@@ -482,18 +478,21 @@ main {
   }
 
   /* projects section && single project */
+  .projects {
+    grid-auto-rows: 300px;
+  }
   .projects,
   .project {
     grid-template-columns: 1fr;
   }
 
   .projects--grid-image {
-    height: 210px;
+    height: 180px;
     width: 290px;
   }
 
   .projects--grid-image-overlay {
-    height: 210px;
+    height: 180px;
     width: 290px;
   }
 
