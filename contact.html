@@ -1,56 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Humayraa</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-</head>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1 class="header--title">
-            <a href="./index.html">Humayraa</a>
-        </h1>
-        <button id="btnScrollToTop" title="Back to top">
-            <i class="fas fa-arrow-circle-up"></i>
-        </button>
-        <nav class="nav">
-            <ul class="nav--items">
-                <!-- <li><a href="./index.html">About me</a></li> -->
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./contact.html">Get in touch</a></li>
-                <li><a href="https://github.com/Hy-M" target="_blank"><i class="devicon-github-plain colored"></i></a></li>
-            </ul>
-        </nav>
+      <h1 class="header--title">
+        <a href="./index.html">Humayraa</a>
+      </h1>
+      <button id="btnScrollToTop" title="Back to top">
+        <i class="fas fa-arrow-circle-up"></i>
+      </button>
+      <nav class="nav">
+        <ul class="nav--items">
+          <!-- <li><a href="./index.html">About me</a></li> -->
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Get in touch</a></li>
+          <li>
+            <a href="https://github.com/Hy-M" target="_blank"
+              ><i class="devicon-github-plain colored"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/humayraa-m/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="contact-section">
-            <section class="about">
-                <h2 class="about--title">Ask me anything</h2>
-                <p class="about--description"> I'll reply to the email address you provide as soon as possible.</p>
-            </section>
-            <section class="contact">
-            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/meqaywzb" method="post">
-                <fieldset id="fs-frm-inputs">
-                  <label for="full-name">Your full name</label>
-                  <input type="text" name="name" id="full-name" placeholder="First and last name" required="">
-                  <label for="email-address">Your email address</label>
-                  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
-                  <label for="message">Your message</label>
-                  <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
-                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-                </fieldset>
-                <input type="submit" value="Send">
-              </form>
-            </section>
+      <section class="contact-section">
+        <section class="about">
+          <h2 class="about--title">Ask me anything</h2>
+          <p class="about--description">
+            I'll reply to the email address you provide as soon as possible.
+          </p>
         </section>
-        <!-- <aside class="aside">
+        <section class="contact">
+          <form
+            id="fs-frm"
+            name="simple-contact-form"
+            accept-charset="utf-8"
+            action="https://formspree.io/meqaywzb"
+            method="post"
+          >
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Your full name</label>
+              <input
+                type="text"
+                name="name"
+                id="full-name"
+                placeholder="First and last name"
+                required=""
+              />
+              <label for="email-address">Your email address</label>
+              <input
+                type="email"
+                name="_replyto"
+                id="email-address"
+                placeholder="email@domain.com"
+                required=""
+              />
+              <label for="message">Your message</label>
+              <textarea
+                rows="5"
+                name="message"
+                id="message"
+                placeholder=""
+                required=""
+              ></textarea>
+              <input
+                type="hidden"
+                name="_subject"
+                id="email-subject"
+                value="Contact Form Submission"
+              />
+            </fieldset>
+            <input type="submit" value="Send" />
+          </form>
+        </section>
+      </section>
+      <!-- <aside class="aside">
             <h4 class="aside--title">Take a look at my work</h4>
             <div class="aside--images">
                 <img class="aside--image" src="./images/website-laptop.jpeg" alt="A project preview on a laptop screen">
@@ -68,10 +112,15 @@
     </main>
 
     <footer class="footer">
-        <p class="footer--description">Developed with care by Humayraa</p>
+      <p class="footer--description">Developed with care by Humayraa</p>
     </footer>
     <script src="./scripts/app.js"></script>
-    <script src="https://kit.fontawesome.com/51ea1f35e7.js" crossorigin="anonymous"  Set-Cookie: SameSite=None; Secure></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/51ea1f35e7.js"
+      crossorigin="anonymous"
+      Set-Cookie:
+      SameSite="None;"
+      Secure
+    ></script>
+  </body>
 </html>
