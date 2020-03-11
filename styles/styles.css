@@ -388,6 +388,7 @@ main {
   .projects--grid-image-overlay {
     height: 220px;
     width: 400px;
+    opacity: 0.4;
   }
 
   /* Single project section */
@@ -513,6 +514,7 @@ main {
   .projects--grid-image-overlay {
     height: 180px;
     width: 290px;
+    opacity: 0.4;
   }
 
   /* Contact form section */
