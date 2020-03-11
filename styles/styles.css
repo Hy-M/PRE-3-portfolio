@@ -371,6 +371,10 @@ main {
     font-size: 1rem;
   }
 
+  .about--list {
+    font-size: 1rem;
+  }
+
   /* projects section && single project*/
   .projects {
     grid-template-columns: 1fr;
@@ -400,12 +404,16 @@ main {
   .aside--image {
     height: 220px;
     width: 400px;
-    margin: 1rem 0;
   }
 
   .aside--image-overlay {
+    opacity: 0.4;
     height: 220px;
     width: 400px;
+  }
+
+  .fa-search {
+    opacity: 1;
   }
 
   /* footer section */
@@ -458,6 +466,10 @@ main {
     font-size: 1rem;
   }
 
+  .about--list {
+    font-size: 1rem;
+  }
+
   /* aside section with projects preview */
   .aside {
     justify-self: center;
@@ -469,8 +481,13 @@ main {
   }
 
   .aside--image-overlay {
+    opacity: 0.4;
     height: 180px;
     width: 290px;
+  }
+
+  .fa-search {
+    opacity: 1;
   }
 
   /* footer section */
