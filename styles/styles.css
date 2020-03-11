@@ -97,7 +97,9 @@ main {
   text-align: center;
 }
 
-.about--description-links a {
+.about--description-links a,
+.about--description a:link,
+.about--description a:visited {
   text-decoration: none;
   color: var(--main-font-color);
 }
