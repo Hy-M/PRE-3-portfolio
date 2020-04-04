@@ -184,9 +184,14 @@ main {
 }
 
 /* Single project section */
-
+.project--img-container {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
 .project--img {
-  width: 100%;
+  height: 500px;
+  width: auto;
   border-radius: 5px;
 }
 
@@ -395,6 +400,10 @@ main {
 
   /* Single project section */
 
+  .project--img {
+    height: 400px;
+  }
+
   /* aside section with projects preview*/
   .aside {
     justify-self: center;
@@ -517,6 +526,14 @@ main {
     height: 180px;
     width: 290px;
     opacity: 0.4;
+  }
+
+  /* Single project section */
+
+  .project--img {
+    height: 200px;
+    width: auto;
+    border-radius: 5px;
   }
 
   /* Contact form section */

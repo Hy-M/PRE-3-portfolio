@@ -46,65 +46,77 @@
     </header>
     <main>
       <section class="about">
-        <h2 class="about--title">NC NEWS - a Reddit inspired news app</h2>
+        <h2 class="about--title">Garden diary app</h2>
         <p class="about--description">
-          A full-stack, single-page, interactive application. Users can post a
-          comment, delete their own comment, vote on articles and comments, and
-          browse through filtered and sorted articles. The data is accessed
-          through a RESTful API with endpoints, whilst the front-end is a
-          single-page React application.
+          For my first mobile development project, I built a mobile app that
+          allows users to sign up and track their plants. It makes use of a
+          third-party API to identify plants that users upload from their camera
+          and camera roll. The back-end is a RESTful API that handles CRUD
+          operations.
         </p>
         <p class="about--description about--description-links">
           <a
             target="_blank"
             rel="noopener"
-            href="https://hym-nc-news.netlify.com/"
-            >View the hosted site</a
+            href="https://www.youtube.com/watch?v=gV1phm3UcPk&feature=youtu.be"
+            >View the demo |</a
           >
-          |
           <a
             target="_blank"
             rel="noopener"
-            href="https://github.com/Hy-M/fe-nc-news"
+            href="https://github.com/Hy-M/plants-app-fe"
             >the front-end code</a
           >
           |
           <a
             target="_blank"
             rel="noopener"
-            href="https://github.com/Hy-M/be-nc-news-sprint"
+            href="https://github.com/Hy-M/plants-diary-app"
             >the back-end code</a
           >
         </p>
-        <img
-          class="project--img"
-          src="./images/nc-news-site-collage.jpg"
-          alt="Hosted NC News site"
-        />
         <p class="about--description">
-          The front-end code was split into components to make independant,
-          reusable bits of code. It was built using:
+          It was built using:
         </p>
         <ul class="about--list">
-          <li>React</li>
-          <li>Reach Router</li>
-          <li>Axios</li>
-          <li>Mocha & Chai</li>
+          <li>React Native & Expo</li>
+          <li>PostgreSQL, Knex & Express.js</li>
+          <li>plant.id API</li>
+          <li>AWS Cognito</li>
         </ul>
-        <!-- <img class="project--img" src="./images/nc-news-be-collage.jpg" alt="Java code midway through the development process"> -->
-        <p class="about--description">
-          The back-end code follows a model-view-controller architecture for
-          seperation of the applications' concerns. It was built using:
+        <div class="project--img-container">
+          <img
+            class="project--img"
+            src="./images/garden-diary-modal.png"
+            alt=""
+          />
+          <img
+            class="project--img"
+            src="./images/garden-diary-wishlist.png"
+            alt=""
+          />
+        </div>
+        <p class="about--description about--description-links">
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.youtube.com/watch?v=gV1phm3UcPk&feature=youtu.be"
+            >View the demo |</a
+          >
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/Hy-M/plants-app-fe"
+            >the front-end code</a
+          >
+          |
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/Hy-M/plants-diary-app"
+            >the back-end code</a
+          >
         </p>
-        <ul class="about--list">
-          <li>PostgreSQL</li>
-          <li>Express.js</li>
-          <li>Knex.js & node-postgres</li>
-          <li>Mocha, Chai & Chai Sorted</li>
-          <li>Supertest</li>
-        </ul>
-        <!-- <img class="project--img" src="./images/nc-news-be-collage.jpg" alt="Java code midway through the development process"> -->
-        <!-- <p class="about--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt et sunt, sapiente possimus impedit error esse eius beatae repudiandae dicta doloribus minima. Saepe non eum dolore magni reprehenderit quaerat unde eius doloribus voluptatum veniam quibusdam modi, nisi, numquam eaque perferendis.</p> -->
       </section>
       <aside class="aside">
         <h4 class="aside--title">View more of my work</h4>
@@ -122,14 +134,15 @@
         <div class="aside--images">
           <img
             class="aside--image"
-            src="./images/garden-diary.jpg"
+            src="./images/nc-news-screenshot.jpg"
             alt="A screenshot of a project"
           />
-          <a href="./project-four.html"
+          <a href="./project-one.html"
             ><i class="aside--image-icon fas fa-search"></i
           ></a>
           <div class="aside--image-overlay"></div>
         </div>
+
         <a class="aside--description-link" href="./projects.html"
           >View full portfolio</a
         >
