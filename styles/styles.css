@@ -472,6 +472,7 @@ main {
   .about--title {
     font-size: 1.3rem;
     line-height: 2rem;
+    height: 65px;
   }
 
   .about--description {
