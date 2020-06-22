@@ -537,6 +537,12 @@ main {
     border-radius: 5px;
   }
 
+  .minimise {
+    height: 180px;
+    width: auto;
+    border-radius: 5px;
+  }
+
   /* Contact form section */
   .contact-section {
     width: 90%;
