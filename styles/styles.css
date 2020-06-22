@@ -537,7 +537,7 @@ main {
     border-radius: 5px;
   }
 
-  .minimise {
+  #minimise {
     height: 180px;
     width: auto;
     border-radius: 5px;
